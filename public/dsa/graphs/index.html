@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Graphs | Shiva Reddy</title>
+<meta name="keywords" content="">
+<meta name="description" content="Intro, Insertion, Removing, Traversing, TradeOffs">
+<meta name="author" content="">
+<link rel="canonical" href="https://shivareddy.dev/dsa/graphs/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.7140587df96a2b1a49eb723fa7063dc0c641a6cb638f3140e8d3beb4deae4f5c.css" integrity="sha256-cUBYfflqKxpJ63I/pwY9wMZBpstjjzFA6NO&#43;tN6uT1w=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://shivareddy.dev/assets/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://shivareddy.dev/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://shivareddy.dev/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://shivareddy.dev/assets/favicon.ico">
+<link rel="mask-icon" href="https://shivareddy.dev/assets/favicon.ico">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5FGWR2YZ35"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-5FGWR2YZ35', { 'anonymize_ip': false });
+}
+</script>
+<meta property="og:title" content="Graphs" />
+<meta property="og:description" content="Intro, Insertion, Removing, Traversing, TradeOffs" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://shivareddy.dev/dsa/graphs/" /><meta property="article:section" content="dsa" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Graphs"/>
+<meta name="twitter:description" content="Intro, Insertion, Removing, Traversing, TradeOffs"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Data Structures \u0026 Algorithms",
+      "item": "https://shivareddy.dev/dsa/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Graphs",
+      "item": "https://shivareddy.dev/dsa/graphs/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Graphs",
+  "name": "Graphs",
+  "description": "Intro, Insertion, Removing, Traversing, TradeOffs",
+  "keywords": [
+    
+  ],
+  "articleBody": "Introduction an image of graph\nDefinition Graph is an abstract data structure, that represents a collection of items that share a relationship.\nConnection of vertices with edges G = (V,E) [where v is the set of vertices, E is the set of edges]\nTerminology Vertex :\nEdge :\nUndirected Graph (or) Non-Directed Graph : A graph where the vertices have no direction - Also known as Graph - There is only “Degree” but there is no “In-Degree” or “Out-Degree” since there is no direction\nDirected Graph : There is direction to the edges. - Also known as Di-Graph\nNon-Connected Graph:\nwhen there are 2 or more components(graphs), that do not have connections with each other - If you join two components(graphs) by placing an edge between two vertices then it becomes a connected graph. - But if you remove that connection, then entire graph is now again un-connected with two separate components(graphs). - Such vertices whose connection removal will result in splitting the graph into sub-graphs(components) are called “Articulation Point”\nSimple Graph: A directed graph is a simple graph, when below conditions satisfy\nIf there are no self-loop vertices, and, - If there are no parallel-edges Strong-Connected Graph:\nDi-Graph :\nNeighbor :\nAdjacent : 1 -\u003e 4 when two nodes are connected with an edge, they are called “Adjacent Vertices” (can be 1 \u003c-\u003e 4)\nParallel Edges: 4 \u003c-\u003e 3 these are two vertices that connect to each other. These are called “Parallel edges”\nNeighbors :\nDegree of a Node:\nIn-Degree: 2-\u003e1, 3-\u003e1, 9-\u003e1 In this graph the “In-Degree” of node 1, is 3. In-Degree is the #.of incoming edges to a vertex\nOut-Degree: 1-\u003e21, 1-\u003e5 In this graph the “Out-Degree” of node 1 is 2. Out-Degree is the #.of outgoing edges from a vertex\nSelf-Loop / cycle : If there is a cycle in Directed Graph it’s called “Self-loop” Graph. ( 1.next = 1, here 1 connects to itself)\nhi this is a tip This is the note Types of Graphs: Representing a graph Represent the following graph in python Graph: 1 ---- 2 | | | | 4 ---- 3 \\ / \\ / 5 Edges b/w nodes: x | 1 2 3 4 5 ⬅ rows ---------------------- 1 | 0 1 0 1 0 2 | 1 0 1 0 0 3 | 0 1 0 1 1 4 | 1 0 1 0 1 5 | 0 0 1 1 0 ⬆ columns Matrix representation: matrix = [[0, 1, 0, 1, 0], [1, 0, 1, 0, 0], [0, 1, 0, 1, 1], [1, 0, 1, 0, 1], [0, 0, 1, 1, 0]] Download file: name Viewing file: graph.py false -\u003e new window\nViewing file: graph.py true -\u003e same window\nDisplay a Graph Download Code:\ndef create_graph(edges: list[list[int]]) -\u003e None:\n# Create a graph\nG = nx.Graph()\n# Add edges to the graph G.add_edges_from(edges) plt.figure() nx.draw(G, with_labels=True) plt.show() Creating a Graph Traversing a Graph Bread First Search Depth First Search Problems List of problems that cover Graphs\nNumber of Islands Clone Graph Max Area of Island Pacific Atlantic Water Flow Surrounded Regions Rotting Oranges Walls and Gates Course Schedule Course Schedule II Redundant Connection Number of Connected Components in an Undirected Graph Graph Valid Tree Word Ladder Spanning Tree Mathematically we can can represent a Graph with the notation: G = (V, E), where V = total vertices, E = total edges\nFor a given graph G, a spanning tress is simply a subset of the graph. So there can be multiple spanning trees for a given graph. But the rule for of a spanning tree for a graph G with V vertices and E edges is that.\nV' = V , where V' is the total vertices the spanning tree(sub-graph) E' = V - 1 , where E' is the total edges of the spanning tree. Spanning trees can be drawn for any graph\nMinimum Spanning Tree ",
+  "wordCount" : "651",
+  "inLanguage": "en",
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://shivareddy.dev/dsa/graphs/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Shiva Reddy",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://shivareddy.dev/assets/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://shivareddy.dev/" accesskey="h" title="Shiva Reddy (Alt + H)">Shiva Reddy</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://shivareddy.dev/dsa" title="DSA">
+                    <span>DSA</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+
+<h1>this is single.html under layouts/dsa</h1>
+
+
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2023 <a href="https://shivareddy.dev/">Shiva Reddy</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

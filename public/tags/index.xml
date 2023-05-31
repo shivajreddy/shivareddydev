@@ -5,6 +5,34 @@
     <link>https://shivareddy.dev/tags/</link>
     <description>Recent content in Tags on Shiva Reddy</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://shivareddy.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Thu, 18 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://shivareddy.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>blog</title>
+      <link>https://shivareddy.dev/tags/blog/</link>
+      <pubDate>Thu, 18 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://shivareddy.dev/tags/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>growth</title>
+      <link>https://shivareddy.dev/tags/growth/</link>
+      <pubDate>Thu, 18 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://shivareddy.dev/tags/growth/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>writing</title>
+      <link>https://shivareddy.dev/tags/writing/</link>
+      <pubDate>Thu, 18 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://shivareddy.dev/tags/writing/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

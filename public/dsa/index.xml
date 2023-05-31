@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Data Structures &amp; Algorithms on Shiva Reddy</title>
+    <link>https://shivareddy.dev/dsa/</link>
+    <description>Recent content in Data Structures &amp; Algorithms on Shiva Reddy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://shivareddy.dev/dsa/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Big O notation</title>
+      <link>https://shivareddy.dev/dsa/big-o/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://shivareddy.dev/dsa/big-o/</guid>
+      <description>Learn about big o time complexity, then big o time complexity, Learn about big o time complexity, then big o time complexityLearn about big o time complexity, then big o time complexityLearn about big o time complexity, then big o time complexityLearn about big o time complexity, then big o time complexity</description>
+    </item>
+    
+    <item>
+      <title>Linked Lists</title>
+      <link>https://shivareddy.dev/dsa/linked-lists/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://shivareddy.dev/dsa/linked-lists/</guid>
+      <description>Intro, Insertion, Removing, Traversing, TradeOffs</description>
+    </item>
+    
+    <item>
+      <title>Graphs</title>
+      <link>https://shivareddy.dev/dsa/graphs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://shivareddy.dev/dsa/graphs/</guid>
+      <description>Intro, Insertion, Removing, Traversing, TradeOffs</description>
+    </item>
+    
+  </channel>
+</rss>

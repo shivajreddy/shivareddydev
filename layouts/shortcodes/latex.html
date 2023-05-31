@@ -1,0 +1,7 @@
+{{ $content := .Inner | safeHTML }}
+<div class="latex-container">
+  <script type="math/tex">
+        {{ $content }}
+    </script>
+  <p>testing latex</p>
+</div>

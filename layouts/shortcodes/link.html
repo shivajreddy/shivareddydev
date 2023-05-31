@@ -1,0 +1,2 @@
+<!-- Syntax: 1st arg:Link Text, 2nd arg:link url, 3rd: if true will open in same window -->
+<a href="{{.Get 1}}" {{if not (.Get 2)}}target="_blank" {{end}}>{{.Get 0}}</a>

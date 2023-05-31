@@ -5,6 +5,84 @@
     <link>https://shivareddy.dev/</link>
     <description>Recent content on Shiva Reddy</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://shivareddy.dev/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Wed, 31 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://shivareddy.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Big O notation</title>
+      <link>https://shivareddy.dev/dsa/big-o/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://shivareddy.dev/dsa/big-o/</guid>
+      <description>Learn about big o time complexity, then big o time complexity, Learn about big o time complexity, then big o time complexityLearn about big o time complexity, then big o time complexityLearn about big o time complexity, then big o time complexityLearn about big o time complexity, then big o time complexity</description>
+    </item>
+    
+    <item>
+      <title>Linked Lists</title>
+      <link>https://shivareddy.dev/dsa/linked-lists/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://shivareddy.dev/dsa/linked-lists/</guid>
+      <description>Intro, Insertion, Removing, Traversing, TradeOffs</description>
+    </item>
+    
+    <item>
+      <title>Graphs</title>
+      <link>https://shivareddy.dev/dsa/graphs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://shivareddy.dev/dsa/graphs/</guid>
+      <description>Intro, Insertion, Removing, Traversing, TradeOffs</description>
+    </item>
+    
+    <item>
+      <title>Hello World</title>
+      <link>https://shivareddy.dev/blog/hello_world/</link>
+      <pubDate>Wed, 31 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://shivareddy.dev/blog/hello_world/</guid>
+      <description>This is a test post</description>
+    </item>
+    
+    <item>
+      <title>100 days of SwiftUI Challenge 🚀</title>
+      <link>https://shivareddy.dev/blog/3_swiftchallenge/</link>
+      <pubDate>Tue, 30 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://shivareddy.dev/blog/3_swiftchallenge/</guid>
+      <description>Setting the stage Language I know: Java, Python, JavaScript Goal: Finish it under 50 days. Daily Target: 2-3 videos | 2-3 hrs of Swift, SwiftUI Day 1 (May-31): Finish https://www.hackingwithswift.com/100/swiftui/1</description>
+    </item>
+    
+    <item>
+      <title>Every developer must have a blog ✍🏼</title>
+      <link>https://shivareddy.dev/blog/2_blog/</link>
+      <pubDate>Thu, 18 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://shivareddy.dev/blog/2_blog/</guid>
+      <description>Set up your platform from start to finish cover: image: images/post_images/shivareddy_blog.jpg alt: every developer must need a blog
+Now this is not final, but it is a way of documenting the process that i am going through.
+Steps
+First create a git repository on github.com, with the name of your blog. Technically the repo name can be any but i suggest to keep the repo name and the site name same, for obvious cleanliness.</description>
+    </item>
+    
+    
+    <item>
+      <title>Let&#39;s get personal...🧘🏼‍♂ 🏃🏼‍♂️</title>
+      <link>https://shivareddy.dev/about-me/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://shivareddy.dev/about-me/</guid>
+      <description>about shiva reddy</description>
+    </item>
+    
+    <item>
+      <title>My resume</title>
+      <link>https://shivareddy.dev/resume/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://shivareddy.dev/resume/</guid>
+      <description>shiva Reddy - resume</description>
+    </item>
+    
+    
   </channel>
 </rss>

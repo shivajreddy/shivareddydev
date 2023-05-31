@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>blog on Shiva Reddy</title>
+    <link>https://shivareddy.dev/tags/blog/</link>
+    <description>Recent content in blog on Shiva Reddy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 18 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://shivareddy.dev/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Every developer must have a blog ✍🏼</title>
+      <link>https://shivareddy.dev/blog/2_blog/</link>
+      <pubDate>Thu, 18 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://shivareddy.dev/blog/2_blog/</guid>
+      <description>Set up your platform from start to finish cover: image: images/post_images/shivareddy_blog.jpg alt: every developer must need a blog
+Now this is not final, but it is a way of documenting the process that i am going through.
+Steps
+First create a git repository on github.com, with the name of your blog. Technically the repo name can be any but i suggest to keep the repo name and the site name same, for obvious cleanliness.</description>
+    </item>
+    
+  </channel>
+</rss>

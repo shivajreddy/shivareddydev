@@ -2,10 +2,49 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://shivareddy.dev/categories/</loc>
+    <loc>https://shivareddy.dev/dsa/big-o/</loc>
+  </url><url>
+    <loc>https://shivareddy.dev/dsa/linked-lists/</loc>
+  </url><url>
+    <loc>https://shivareddy.dev/dsa/graphs/</loc>
+  </url><url>
+    <loc>https://shivareddy.dev/blog/</loc>
+    <lastmod>2023-05-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://shivareddy.dev/blog/hello_world/</loc>
+    <lastmod>2023-05-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://shivareddy.dev/</loc>
+    <lastmod>2023-05-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://shivareddy.dev/blog/3_swiftchallenge/</loc>
+    <lastmod>2023-05-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://shivareddy.dev/tags/blog/</loc>
+    <lastmod>2023-05-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://shivareddy.dev/blog/2_blog/</loc>
+    <lastmod>2023-05-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://shivareddy.dev/tags/growth/</loc>
+    <lastmod>2023-05-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://shivareddy.dev/tags/</loc>
+    <lastmod>2023-05-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://shivareddy.dev/tags/writing/</loc>
+    <lastmod>2023-05-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://shivareddy.dev/archive/</loc>
+  </url><url>
+    <loc>https://shivareddy.dev/categories/</loc>
+  </url><url>
+    <loc>https://shivareddy.dev/dsa/</loc>
+  </url><url>
+    <loc>https://shivareddy.dev/about-me/</loc>
+  </url><url>
+    <loc>https://shivareddy.dev/resume/</loc>
+  </url><url>
+    <loc>https://shivareddy.dev/search/</loc>
   </url>
 </urlset>
