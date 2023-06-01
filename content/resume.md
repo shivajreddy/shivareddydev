@@ -6,6 +6,8 @@ summary: "shiva Reddy - resume"
 offTheRecord: true
 showReadingTime: false
 showToc: false
+comments: false
+math: true
 ---
 
 

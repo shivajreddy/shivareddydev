@@ -13,7 +13,7 @@ params:
   defaultTheme: auto # dark, light
   disableThemeToggle: false
 
-  section: "posts"
+  # math: true
 
   assets:
     disableHLJS: true 

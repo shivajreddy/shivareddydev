@@ -1,0 +1,29 @@
+{{- define "main" }}
+
+
+
+<embed src="/files/resume.pdf" width="800" height="500">
+<!-- image: images/post_images/shivareddy_blog.jpg -->
+
+<footer class="post-footer">
+  {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
+  <ul class="post-tags">
+    {{- range ($.GetTerms $tags) }}
+    <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+    {{- end }}
+  </ul>
+  {{- if (.Param "ShowPostNavLinks") }}
+  {{- partial "post_nav_links.html" . }}
+  {{- end }}
+  {{- if (and site.Params.ShowShareButtons (ne .Params.disableShare true)) }}
+  {{- partial "share_icons.html" . -}}
+  {{- end }}
+</footer>
+
+{{- if (.Param "comments") }}
+{{- partial "comments.html" . }}
+{{- end }}
+{{.Params.shiva}}
+</article>
+
+{{- end }}{{/* end main */}}

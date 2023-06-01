@@ -7,6 +7,7 @@ placeholder: "I am looking for 🤔..."
 offTheRecord: true
 showReadingTime: false
 showToc: false
+comments: false
 ---
 
 
