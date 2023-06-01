@@ -27,9 +27,9 @@
     color: inherit;
 }
 
-.footer a:hover {
+/* .footer a:hover { */
     /* border-bottom: 1px solid var(--primary); */
-}
+/* } */
 
 .footer nav {
     display: flex;
