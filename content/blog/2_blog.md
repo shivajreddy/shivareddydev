@@ -1,5 +1,6 @@
 ---
 title: "Every developer must have a blog ✍🏼"
+type: "blog"
 date: 2023-05-18
 tags: ["blog", "writing", "growth"]
 ---
