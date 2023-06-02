@@ -3,10 +3,11 @@
 <header class="page-header">
   <h1>
     {{ .Title }}
+    <hr>
     {{- if (.Param "ShowRssButtonInSectionTermList") }}
     {{- $rss := (.OutputFormats.Get "rss") }}
     {{- if (eq .Kind `page`) }}
-      {{- $rss = (.Parent.OutputFormats.Get "rss") }}
+    {{- $rss = (.Parent.OutputFormats.Get "rss") }}
     {{- end }}
     {{- with $rss }}
     <a href="{{ .RelPermalink }}" title="RSS" aria-label="RSS">
@@ -27,7 +28,8 @@
   {{- end }}
 </header>
 
-{{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+{{/*- $pages := where site.RegularPages "Type" "in" site.Params.mainSections */}}
+{{- $pages := site.RegularPages }}
 
 {{- if site.Params.ShowAllPagesInArchive }}
 {{- $pages = site.RegularPages }}
