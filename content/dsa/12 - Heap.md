@@ -1,6 +1,6 @@
 ---
 title: "Heap"
-url: "dsa/graphs"
+url: "dsa/heap"
 summary: "Intro, Insertion, Removing, Traversing, TradeOffs" 
 showReadingTime: false
 showToc: true
