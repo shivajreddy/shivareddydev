@@ -6,7 +6,7 @@
     <description>Recent content on Shiva Reddy</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 31 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://shivareddy.dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 06 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://shivareddy.dev/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Big O notation</title>
       <link>https://shivareddy.dev/dsa/big-o/</link>
@@ -41,6 +41,18 @@
       
       <guid>https://shivareddy.dev/dsa/heap/</guid>
       <description>Intro, Insertion, Removing, Traversing, TradeOffs</description>
+    </item>
+    
+    <item>
+      <title>LeetCode Design Doc</title>
+      <link>https://shivareddy.dev/blog/4_leetcode_design_doc/</link>
+      <pubDate>Tue, 06 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://shivareddy.dev/blog/4_leetcode_design_doc/</guid>
+      <description>Process of generating a design doc for leet code
+1. Verify problem understanding: Once you read the problem statement followed by looking at the examples(assume there are 3 examples).
+Replicate why you would get the output for each of the examples for each of those 3 inputs by hand.
+2. Verify additional inputs/outputs You should replicate with a new input&amp;rsquo;s and write down outputs for these new input&amp;rsquo;s. This is when you confirm the outputs with the interviewer.</description>
     </item>
     
     <item>
