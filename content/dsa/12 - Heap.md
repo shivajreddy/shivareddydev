@@ -5,7 +5,7 @@ summary: "Intro, Insertion, Removing, Traversing, TradeOffs"
 showReadingTime: false
 showToc: true
 showBreadcrumbs: true
-weight : 11
+weight : 12
 ---
 
 - Heap is a complete binary tree

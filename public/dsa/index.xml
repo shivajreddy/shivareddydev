@@ -42,5 +42,23 @@
       <description>Intro, Insertion, Removing, Traversing, TradeOffs</description>
     </item>
     
+    <item>
+      <title>Dynamic Programming</title>
+      <link>https://shivareddy.dev/dsa/dynamic-programming/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://shivareddy.dev/dsa/dynamic-programming/</guid>
+      <description>Summary for DP here</description>
+    </item>
+    
+    <item>
+      <title>Interview Preparation</title>
+      <link>https://shivareddy.dev/dsa/interview-preparation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://shivareddy.dev/dsa/interview-preparation/</guid>
+      <description>Summary for this section here</description>
+    </item>
+    
   </channel>
 </rss>

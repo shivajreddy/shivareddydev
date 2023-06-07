@@ -44,6 +44,15 @@
     </item>
     
     <item>
+      <title>Dynamic Programming</title>
+      <link>https://shivareddy.dev/dsa/dynamic-programming/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://shivareddy.dev/dsa/dynamic-programming/</guid>
+      <description>Summary for DP here</description>
+    </item>
+    
+    <item>
       <title>LeetCode Design Doc</title>
       <link>https://shivareddy.dev/blog/4_leetcode_design_doc/</link>
       <pubDate>Tue, 06 Jun 2023 00:00:00 +0000</pubDate>
@@ -85,6 +94,15 @@ Steps
 First create a git repository on github.com, with the name of your blog. Technically the repo name can be any but i suggest to keep the repo name and the site name same, for obvious cleanliness.</description>
     </item>
     
+    
+    <item>
+      <title>Interview Preparation</title>
+      <link>https://shivareddy.dev/dsa/interview-preparation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://shivareddy.dev/dsa/interview-preparation/</guid>
+      <description>Summary for this section here</description>
+    </item>
     
     <item>
       <title>Let&#39;s get personal...🧘🏼‍♂ 🏃🏼‍♂️</title>
