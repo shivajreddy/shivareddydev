@@ -23,7 +23,7 @@ Prim's and Kruskal's algorithm for finding Minimum Spanning Tree is a Greedy Met
 #### 2. Dynamic Programming:
 we find all the possible results and then pick the optimal result.
   - Though DP can be naturally represented as recursive formula's we use iterative approach to solve DP problems. We can still use recursion, but mostly it's iterative approach.
-  - DP follows ***principal of optimality***: it means that a problem can be solved by taking a sequence of decisions to get the optimal solution.
+  - DP follows ***principal of optimality***: it means that a problem can be solved by taking a **sequence of decisions** to get the optimal solution.
   - In DP every stage we take a decision.
   - Takes more space and time. More time because we explore all possibilities. More space because in Top-Down approach we use memoization which stores all possible variations, hence more space.
 
@@ -37,5 +37,9 @@ Understanding the problem:
 It is a Directed weighted graph. All vertices are divided into stages. First and last stage will only have 1 node, start node and target node. Nodes connect only to the next stage. 
 Goal is to find the least cost path from start to target. MultiStage Graph's are used for solving resource allocation problems.
 
-![MultiStage Graph](/images/post_images/13/1.jpeg)
+![MultiStage Graph](/images/post_images/13/1.jpg)
+![MultiStage Graph](/images/post_images/13/2.jpg)
+
+1. Find the minimum cost of each vertex. when we start from 1, we have to already know the minimum cost path for 2,3,4,5 and these nodes depend on min. costs of nodes at V3 and so on. So we begin from last, (Bottom-Up approach, iteratively) because the node 12 is the end and the min. cost of 12 is 0. and from here we trace back.
+2. A
 
