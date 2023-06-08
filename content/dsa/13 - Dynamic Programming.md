@@ -48,6 +48,24 @@ we find all the possible results and then pick the optimal result.
 [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) is another example of a classic dynamic programming problem. In this problem, we need to determine the length of the longest (first characteristic) subsequence that is strictly increasing. For example, if we had the input nums = [1, 2, 6, 3, 5]nums = [1, 2, 6, 3, 5], the answer would be 4, from the subsequence [1, 2, 3, 5][1, 2, 3, 5]. Again, the important decision comes when we arrive at the 6 - do we take it or not take it? If we decide to take it, then we get to increase our current length by 1, but it affects the future - we can no longer take the 3 or 5. Of course, with such a small example, it's easy to see why we shouldn't take it - but how are we supposed to design an algorithm that can always make the correct decision with huge inputs? Imagine if nums contained 10,00010,000 numbers instead.
 
 ### Framework for DP problems
+[LeetCode - Link for this section](https://leetcode.com/explore/learn/card/dynamic-programming/631/strategy-for-solving-dp-problems/4096/)  
+Before looking at the 3 things that make DP framework, understand what state & state variables are.
+**State**: a **state** is a set of variables that can sufficiently describe a scenario. These variables are called **state variables**, and we only care about relevant ones. tldr; all state variables together is the state.
+
+> - In climbing stairs problem: To describe every scenario in Climbing Stairs, there is only 1 relevant state variable, the current step we are on. We can denote this with an integer ii. If i = 6i = 6, that means that we are describing the state of being on the 6th step. Every unique value of ii represents a unique **state**.
+> - In robbing houses problem: the amount of money in current house is a state variable.
+> - In coin change problem: the denomination is a state variable
+
+Mind map image: imagine that the framework is the tree/graph we are drawing, and now for the nodes we have to choose the state variables of the problem. because of the tree represents all the possible solutions for the problem, and the the state variables are those that we use to traverse in the tree to calculate the value for that path.
+
+**FRAMEWORK:**
+1. **A function or data structure that will compute/contain the answer to the problem for every given state**.  
+	Data Structure is straightforward, say we have a dictionary for all the fibonacci numbers {num : fib(num) }  
+	 Function: instead of a Data Structure if we have a function that we can call and that returns the value for us.
+2. **A recurrence relation to transition between states.**
+3. **Base cases, so that our recurrence relation doesn't go on infinitely.**
+
+
 
 ### Problem 1: MultiStage Graph [YT](https://www.youtube.com/watch?v=9iE9Mj4m8jk&list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O&index=47)
 
