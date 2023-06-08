@@ -10,9 +10,11 @@ weight : 13
 
 Learning objectives:
 
+
 ### How to solve optimization problems? [YT](https://www.youtube.com/watch?v=5dRGRueKU3M&list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O&index=46)
 Understand the difference b/w Greedy method and Dynamic programming.
-Both are used for **optimization** problems. Optimization problems are those where you solve for minimum result or maximum result.
+- Both are used for **optimization** problems. Optimization problems are those where you solve for minimum result or maximum result.  
+- **Divide and conquer algorithms break the problem down into subproblems, but these subproblems are not overlapping.**
 
 #### 1. Greedy Method: 
 we follow a pre-defined procedure to get the optimal solution. And the procedure is optimal.
@@ -28,18 +30,35 @@ we find all the possible results and then pick the optimal result.
   - Takes more space and time. More time because we explore all possibilities. More space because in Top-Down approach we use memoization which stores all possible variations, hence more space.
 
 ### Types of DP problems:
-1. Tabulation:  **Bottom-Up** approach, iterative approach
-2. Memoization: **Top-Down** approach, recursive approach
+1. Bottom-up (Tabulation): Iterative approach - runtime is usually faster, as iteration does not have the overhead that recursion does.
+2. Top-Down (Memoization): Recursive approach - usually much easier to write. This is because with recursion, the ordering of subproblems does not matter, whereas with tabulation, we need to go through a logical ordering of solving subproblems.
 
-#### Problem 1: MultiStage Graph [YT](https://www.youtube.com/watch?v=9iE9Mj4m8jk&list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O&index=47)
+### When to use DP
+**The first characteristic** that is common in DP problems is that the problem will ask for the optimum value (maximum or minimum) of something, or the number of ways there are to do something. For example:
+
+- What is the minimum cost of doing...
+- What is the maximum profit from...
+- How many ways are there to do...
+- What is the longest possible...
+- Is it possible to reach a certain point...
+
+**The second characteristic** that is common in DP problems is that future "decisions" depend on earlier decisions. Deciding to do something at one step may affect the ability to do something in a later step. This characteristic is what makes a greedy algorithm invalid for a DP problem - we need to factor in results from previous decisions. Admittedly, this characteristic is not as well defined as the first one, and the best way to identify it is to go through some examples.
+
+[House Robber](https://leetcode.com/problems/house-robber/) is an excellent example of a dynamic programming problem.
+[Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) is another example of a classic dynamic programming problem. In this problem, we need to determine the length of the longest (first characteristic) subsequence that is strictly increasing. For example, if we had the input nums = [1, 2, 6, 3, 5]nums = [1, 2, 6, 3, 5], the answer would be 4, from the subsequence [1, 2, 3, 5][1, 2, 3, 5]. Again, the important decision comes when we arrive at the 6 - do we take it or not take it? If we decide to take it, then we get to increase our current length by 1, but it affects the future - we can no longer take the 3 or 5. Of course, with such a small example, it's easy to see why we shouldn't take it - but how are we supposed to design an algorithm that can always make the correct decision with huge inputs? Imagine if nums contained 10,00010,000 numbers instead.
+
+### Framework for DP problems
+
+### Problem 1: MultiStage Graph [YT](https://www.youtube.com/watch?v=9iE9Mj4m8jk&list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O&index=47)
 
 Understanding the problem:
 It is a Directed weighted graph. All vertices are divided into stages. First and last stage will only have 1 node, start node and target node. Nodes connect only to the next stage. 
 Goal is to find the least cost path from start to target. MultiStage Graph's are used for solving resource allocation problems.
 
+1. Find the minimum cost of each vertex. when we start from 1, we have to already know the minimum cost path for 2,3,4,5 and these nodes depend on min. costs of nodes at V3 and so on. So we begin from last, (Bottom-Up approach, iteratively) because the node 12 is the end and the min. cost of 12 is 0. and from here we trace back.
 ![MultiStage Graph](/images/post_images/13/1.jpg)
 ![MultiStage Graph](/images/post_images/13/2.jpg)
 
-1. Find the minimum cost of each vertex. when we start from 1, we have to already know the minimum cost path for 2,3,4,5 and these nodes depend on min. costs of nodes at V3 and so on. So we begin from last, (Bottom-Up approach, iteratively) because the node 12 is the end and the min. cost of 12 is 0. and from here we trace back.
-2. A
+2. Now using forward approach.
+
 
