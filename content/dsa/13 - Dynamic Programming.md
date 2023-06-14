@@ -80,3 +80,80 @@ Goal is to find the least cost path from start to target. MultiStage Graph's are
 2. Now using forward approach.
 
 
+### Problem 2: House Robber
+
+```python
+'''
+					1 2 3 1 X
+					- - - - -
+					
+					2 7 9 3 1 X
+					- - - - - -
+				i = 0 1 2 3 4 5
+			 dp(i)= 2 7 11 11 12
+
+	 
+					i
+					
+					0         0
+					
+					1      2       7
+					
+					2     9  3    3  1
+
+
+- if you start from beginning, the choices of next houses are to be already known.so it doesnt make sense to start from beginning.
+
+- We start from last house(same logic for every house), when we are at the last house we have 2 options: rob this house + rob i-2th house, or just rob i-1 house.
+
+- So for a house at index i, the max. amount stolen is max( dp(i-2)+nums[i], dp(i-1) ),
+
+- i.e., the max amount that can be stolen until this point depends on these 2 situations, ie.,e steal(current_house)+stolen until(current_house -2) or stolen(current_house-1).
+
+  
+
+- so the decision of i depends on i-1, i-2. This means that the base cases for i=0,i=1 should be defined.
+
+- cuz starting with i = n, we go back n-1,n-2,...5,4,3,2,1. and when we reach i=2, it depends on 1,0.
+
+-when i is at 0, we only have the option to steal that house, since each house >= 0
+
+- when i is at 1, we chose the max(nums[0], nums[1]) bcs we start with i=1 if i=0 holds less amount, but if i=0 holds more value, then dp(1) = nums[0] meaning at idx=1, max amount stolen is nums[0] ex: 99, 7, ...
+'''
+
+class Solution:
+
+	def rob(self, nums: List[int]) -> int:
+
+		def dp(i, memo):
+			if i == 0:
+				return nums[0]
+			if i == 1:
+				return max(nums[0], nums[1])
+			if i not in memo:
+				memo[i] = max(dp(i-2, memo) + nums[i], dp(i-1, memo))
+			return memo[i]
+	
+		n = len(nums)
+		memo = {}
+		return dp(n - 1, memo)
+
+```
+
+
+### Multidimensional DP
+
+one state variable to define the state -> 1-dimension DP
+Two state variables to define the state -> 2-dimension DP
+
+The following are common things to look out for in DP problems that require a state variable:
+- An index along some input.  
+   Example: If the input is `nums = [0, 1, 2, 3, 4, 5, 6]`, then `dp(4)` would represent the answer to the problem for the input `nums = [0, 1, 2, 3, 4]`
+- A second index along some input. Sometimes, you need two index state variables, say `i`,`j`.  
+  In some questions, these variables represent the answer to the original problem if you considered the input starting at index `i` and ending at index `j`. Using the same example above, `dp(1, 3)` would solve the problem for the input `nums = [1, 2, 3]`, if the original input was `[0, 1, 2, 3, 4, 5, 6]`.  
+- Explicit numerical constraints given in the problem. For example, "you are only allowed to complete `k` transactions", or "you are allowed to break up to `k` obstacles", etc. 
+- Variables that describe statuses in a given state.  
+  Example: "True if currently holding a key, False if not", "currently holding `k` packages"
+- some sort of data or a bit mask used to indicate things being 'visited' or 'used'.  
+  Example: `bitmask` is a mask where the `i` bit indicates visited or not visited.
+  
